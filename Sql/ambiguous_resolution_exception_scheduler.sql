@@ -1,0 +1,15 @@
+create table if not exists ambiguous_resolution_exception_scheduler(
+bean_config_file_name Integer not null,
+bean_inject_mechanism varchar(255) null,
+reentrant_thread varchar(255) null,
+inter_thread_communication varchar(255) null,
+bean_lifecycles varchar(255) null,
+networks varchar(255) null,
+ssl_proxy_engine varchar(255) null,
+ssl_proxy_verify varchar(255) null,
+ssl_proxy_check_peer_cn varchar(255) null,
+ssl_proxy_check_peer_name varchar(255) null,
+proxy_requests varchar(255) null,
+proxy_timeout varchar(255) null,
+modified_date varchar(255) null,
+constraint ambiguous_resolution_exception_scheduler_pk primary key(bean_config_file_name));
